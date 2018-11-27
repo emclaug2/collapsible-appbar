@@ -1,6 +1,6 @@
 # Collapsible-appbar
 
-This is a sample application showing how to build a basic collapsible-appbar.
+This is a sample application showing how to build a basic collapsible-appbar. At the top of the page, the appbar is large, but as you scroll, it changes to a standard appbar.
 
 ## Running the example
 To run this example, first clone the repository. Each of our example projects comes with a branch for Angular and a branch for React. You can choose which branch to use when you clone the repository (or you can switch after cloning as well):
