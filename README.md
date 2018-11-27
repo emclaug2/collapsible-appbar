@@ -1,4 +1,4 @@
-# Login Example
+# Collapsible-appbar
 
 This is a sample application showing how to build a basic collapsible-appbar.
 
