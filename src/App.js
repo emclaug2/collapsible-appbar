@@ -24,7 +24,7 @@ const styles = theme => ({
     backgroundBlendMode: 'soft-light',
     minHeight: theme.spacing.unit * 34,
     color: '#fff',
-    padding: '15px 0'
+    padding: theme.spacing.unit * 8 + ' 0'
   },
   bannerMain: {
     flexDirection: 'column',
@@ -34,7 +34,7 @@ const styles = theme => ({
     marginLeft: theme.spacing.unit * 8,
   },
   h5: {
-    margin: '15px 0'
+    margin: theme.spacing.unit * 8 + ' 0'
   },
   flexCenter: {
     display: 'flex',
@@ -137,8 +137,7 @@ class App extends React.Component {
                   <PersonIcon />
                 </ListItemIcon>
                 <div>
-                  <ListItemText primary={item.president}/>
-                  <ListItemText  secondary={item.party} />
+                  <ListItemText primary={item.president} secondary={item.party}/>
                   <ListItemText className={classes.noPadLeft} secondary={item.took_office} />
                 </div>
               </ListItem>)
