@@ -1,4 +1,5 @@
 # Collapsible-appbar
+[![CircleCI](https://circleci.com/gh/pxblue/collapsible-appbar/tree/angular.svg?style=shield)](https://circleci.com/gh/pxblue/collapsible-appbar/tree/angular)
 
 This is a sample application showing how to build a basic collapsible-appbar. At the top of the page, the appbar is large, but as you scroll, it changes to a standard appbar.
 
