@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/collapsible -appbar
+    working_directory: ~/collapsible-appbar
     docker:
       - image: circleci/node:8.11-browsers
     steps:
