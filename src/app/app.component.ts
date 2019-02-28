@@ -71,7 +71,7 @@ export class AppComponent {
       "breaker",
       this.domSanitizer.bypassSecurityTrustResourceUrl("../node_modules/@pxblue/icons-svg/Breaker.svg")
     );
-    console.log(this.scrollDispatcher.scrollContainers);
+    
   }
 
 
