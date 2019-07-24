@@ -1,6 +1,4 @@
 import { Component, NgZone } from '@angular/core';
-import { MatIconRegistry } from "@angular/material/icon";
-import { DomSanitizer } from "@angular/platform-browser";
 import { CdkScrollable, ScrollDispatcher } from '@angular/cdk/scrolling';
 import { map } from 'rxjs/operators';
 import { presidents } from './shared/presidents';
@@ -17,16 +15,9 @@ export class AppComponent {
   scrollingSubscription: any;
   scrollTop: any;
   constructor(
-    private matIconRegistry: MatIconRegistry,
-    private domSanitizer: DomSanitizer,
     private scrollDispatcher: ScrollDispatcher,
     private ngZone: NgZone
-  ) {
-    this.matIconRegistry.addSvgIcon(
-      "breaker",
-      this.domSanitizer.bypassSecurityTrustResourceUrl("../node_modules/@pxblue/icons-svg/Breaker.svg")
-    );
-  }
+  ) {}
 
 
   ngOnInit() {
@@ -39,7 +30,7 @@ export class AppComponent {
     if (event) {
       return event.getElementRef().nativeElement.scrollTop;
     } else {
-      return window.scrollY;
+      return window.pageYOffset;
     }
   }
   setScroll(scrollTop){
