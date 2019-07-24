@@ -17,6 +17,7 @@ import AppBar from '@material-ui/core/AppBar';
 import { withStyles } from '@material-ui/core/styles';
 const styles = theme => ({
   banner: {
+    // IE 11 does not support background blend mode. To see the image, you need to reverse the order of the image and gradient in the background property below.
     background: 
     'linear-gradient(rgba(0, 123, 193, 1), rgba(0, 75, 158, 1)),url(https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTIwNjA4NjMzODg2NTc0MDky/abraham-lincoln-9382540-2-402.jpg)',
     backgroundRepeat: 'no-repeat',
@@ -67,8 +68,8 @@ class App extends React.Component {
 
   componentDidMount() {
     window.addEventListener('scroll', (event) => {
-      this.setState({ opacity: window.scrollY });
-      if (window.scrollY > 70) {
+      this.setState({ opacity: window.pageYOffset });
+      if (window.pageYOffset > 70) {
         this.setState({
           activeClass: 'top'
         });
