@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "responsive-page": {
+    "collapsible-appbar": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/responsive-page",
+            "outputPath": "dist/collapsible-appbar",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -46,24 +46,30 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            },
+            "es5": {
+              "tsConfig": "tsconfig.es5.json"
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "responsive-page:build"
+            "browserTarget": "collapsible-appbar:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "responsive-page:build:production"
+              "browserTarget": "collapsible-appbar:build:production"
+            },
+            "es5": {
+              "browserTarget": "collapsible-appbar:build:es5"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "responsive-page:build"
+            "browserTarget": "collapsible-appbar:build"
           }
         },
         "test": {
@@ -99,7 +105,7 @@
         }
       }
     },
-    "responsive-page-e2e": {
+    "collapsible-appbar-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -107,11 +113,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "responsive-page:serve"
+            "devServerTarget": "collapsible-appbar:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "responsive-page:serve:production"
+              "devServerTarget": "collapsible-appbar:serve:production"
             }
           }
         },
@@ -127,5 +133,5 @@
       }
     }
   },
-  "defaultProject": "responsive-page"
+  "defaultProject": "collapsible-appbar"
 }
