@@ -1,12 +1,12 @@
-# Collapsible-Appbar Example
+# Collapsible Appbar Example
 This project demonstrates how to build a basic collapsible-appbar. At the top of the page, the appbar is large, but as you scroll, it changes to a standard appbar.
 
 | Framework           | Status       | Live Examples  |
 | ---------------- |--------------|------------------|
-| Angular | [![CircleCI](https://circleci.com/gh/pxblue/collapsible-appbar/tree/angular.svg?style=shield)](https://circleci.com/gh/pxblue/collapsible-appbar/tree/angular) | [View on Stackblitz](https://stackblitz.com/edit/pxblue-collapsible-appbar-angular)
-| React | [![CircleCI](https://circleci.com/gh/pxblue/collapsible-appbar/tree/react.svg?style=shield)](https://circleci.com/gh/pxblue/collapsible-appbar/tree/react) | [View on Stackblitz](https://stackblitz.com/edit/pxblue-collapsible-appbar-react)
-| Ionic | [![CircleCI](https://circleci.com/gh/pxblue/collapsible-appbar/tree/ionic.svg?style=shield)](https://circleci.com/gh/pxblue/collapsible-appbar/tree/ionic) | [View on Stackblitz](https://stackblitz.com/edit/pxblue-collapsible-appbar-ionic)
-| React Native | [![CircleCI](https://circleci.com/gh/pxblue/collapsible-appbar/tree/reactnative.svg?style=shield)](https://circleci.com/gh/pxblue/collapsible-appbar/tree/reactnative) | [View on Snack](https://snack.expo.io/@px-blue/collapsible-appbar-reactnative)
+| Angular | [![CircleCI](https://circleci.com/gh/pxblue/collapsible-appbar/tree/angular.svg?style=shield)](https://circleci.com/gh/pxblue/collapsible-appbar/tree/angular) | [View on Stackblitz](https://stackblitz.com/github/pxblue/collapsible-appbar/tree/angular)
+| React | [![CircleCI](https://circleci.com/gh/pxblue/collapsible-appbar/tree/react.svg?style=shield)](https://circleci.com/gh/pxblue/collapsible-appbar/tree/react) | [View on Code Sandbox](https://codesandbox.io/s/github/pxblue/collapsible-appbar/tree/react)
+| Ionic | [![CircleCI](https://circleci.com/gh/pxblue/collapsible-appbar/tree/ionic.svg?style=shield)](https://circleci.com/gh/pxblue/collapsible-appbar/tree/ionic) | [View on Stackblitz](https://stackblitz.com/github/pxblue/collapsible-appbar/tree/ionic)
+| React Native | [![CircleCI](https://circleci.com/gh/pxblue/collapsible-appbar/tree/reactnative.svg?style=shield)](https://circleci.com/gh/pxblue/collapsible-appbar/tree/reactnative) | [View on Snack](https://snack.expo.io/@git/github.com/pxblue/collapsible-appbar@reactnative)
 
 ## Running the Example
 ### Angular
@@ -33,6 +33,7 @@ yarn && ionic serve
 ```
 To run on a device, add the platform then build and run the project:
 ```
+ionic cordova resources
 ionic cordova platform add [android|ios]
 ionic cordova build [android|ios]
 ionic cordova run [android|ios]
