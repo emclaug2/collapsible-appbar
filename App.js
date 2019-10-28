@@ -6,9 +6,9 @@ import {
   Animated,
   ScrollView,
   StatusBar,
-  SafeAreaView
+  SafeAreaView,
+  Platform
 } from 'react-native';
-import { Platform } from '@unimodules/core';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 import * as Colors from '@pxblue/colors'
 import { ListItem, Text, Icon } from 'react-native-elements';
