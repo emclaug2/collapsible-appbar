@@ -696,6 +696,7 @@ exports[`App Tests  App Renders 1`] = `
                       Object {
                         "backgroundColor": "transparent",
                         "fontSize": 17,
+                        "marginLeft": 15,
                       }
                     }
                     testID="listItemTitle"
@@ -739,7 +740,13 @@ exports[`App Tests  App Renders 1`] = `
                   >
                     George Washington
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 15,
+                      }
+                    }
+                  >
                     <Text
                       style={
                         Object {
@@ -920,6 +927,7 @@ exports[`App Tests  App Renders 1`] = `
                       Object {
                         "backgroundColor": "transparent",
                         "fontSize": 17,
+                        "marginLeft": 15,
                       }
                     }
                     testID="listItemTitle"
@@ -963,7 +971,13 @@ exports[`App Tests  App Renders 1`] = `
                   >
                     John Adams
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 15,
+                      }
+                    }
+                  >
                     <Text
                       style={
                         Object {
@@ -1144,6 +1158,7 @@ exports[`App Tests  App Renders 1`] = `
                       Object {
                         "backgroundColor": "transparent",
                         "fontSize": 17,
+                        "marginLeft": 15,
                       }
                     }
                     testID="listItemTitle"
@@ -1187,7 +1202,13 @@ exports[`App Tests  App Renders 1`] = `
                   >
                     Thomas Jefferson
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 15,
+                      }
+                    }
+                  >
                     <Text
                       style={
                         Object {
@@ -1368,6 +1389,7 @@ exports[`App Tests  App Renders 1`] = `
                       Object {
                         "backgroundColor": "transparent",
                         "fontSize": 17,
+                        "marginLeft": 15,
                       }
                     }
                     testID="listItemTitle"
@@ -1411,7 +1433,13 @@ exports[`App Tests  App Renders 1`] = `
                   >
                     James Madison
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 15,
+                      }
+                    }
+                  >
                     <Text
                       style={
                         Object {
@@ -1592,6 +1620,7 @@ exports[`App Tests  App Renders 1`] = `
                       Object {
                         "backgroundColor": "transparent",
                         "fontSize": 17,
+                        "marginLeft": 15,
                       }
                     }
                     testID="listItemTitle"
@@ -1635,7 +1664,13 @@ exports[`App Tests  App Renders 1`] = `
                   >
                     James Monroe
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 15,
+                      }
+                    }
+                  >
                     <Text
                       style={
                         Object {
@@ -1816,6 +1851,7 @@ exports[`App Tests  App Renders 1`] = `
                       Object {
                         "backgroundColor": "transparent",
                         "fontSize": 17,
+                        "marginLeft": 15,
                       }
                     }
                     testID="listItemTitle"
@@ -1859,7 +1895,13 @@ exports[`App Tests  App Renders 1`] = `
                   >
                     John Quincy Adams
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 15,
+                      }
+                    }
+                  >
                     <Text
                       style={
                         Object {
@@ -2040,6 +2082,7 @@ exports[`App Tests  App Renders 1`] = `
                       Object {
                         "backgroundColor": "transparent",
                         "fontSize": 17,
+                        "marginLeft": 15,
                       }
                     }
                     testID="listItemTitle"
@@ -2083,7 +2126,13 @@ exports[`App Tests  App Renders 1`] = `
                   >
                     Andrew Jackson
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 15,
+                      }
+                    }
+                  >
                     <Text
                       style={
                         Object {
@@ -2264,6 +2313,7 @@ exports[`App Tests  App Renders 1`] = `
                       Object {
                         "backgroundColor": "transparent",
                         "fontSize": 17,
+                        "marginLeft": 15,
                       }
                     }
                     testID="listItemTitle"
@@ -2307,7 +2357,13 @@ exports[`App Tests  App Renders 1`] = `
                   >
                     Martin Van Buren
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 15,
+                      }
+                    }
+                  >
                     <Text
                       style={
                         Object {
@@ -2488,6 +2544,7 @@ exports[`App Tests  App Renders 1`] = `
                       Object {
                         "backgroundColor": "transparent",
                         "fontSize": 17,
+                        "marginLeft": 15,
                       }
                     }
                     testID="listItemTitle"
@@ -2531,7 +2588,13 @@ exports[`App Tests  App Renders 1`] = `
                   >
                     William Henry Harrison
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 15,
+                      }
+                    }
+                  >
                     <Text
                       style={
                         Object {
@@ -2712,6 +2775,7 @@ exports[`App Tests  App Renders 1`] = `
                       Object {
                         "backgroundColor": "transparent",
                         "fontSize": 17,
+                        "marginLeft": 15,
                       }
                     }
                     testID="listItemTitle"
@@ -2755,7 +2819,13 @@ exports[`App Tests  App Renders 1`] = `
                   >
                     John Tyler
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 15,
+                      }
+                    }
+                  >
                     <Text
                       style={
                         Object {
