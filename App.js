@@ -12,13 +12,12 @@ import {
 
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 import * as Colors from '@pxblue/colors'
-import { Header, ListItem, Text, Icon, colors } from 'react-native-elements';
+import { ListItem, Text, Icon } from 'react-native-elements';
 import data from './data';
 
 const AnimatedSafeAreaView = Animated.createAnimatedComponent(SafeAreaView);
 const HEADER_EXPANDED_HEIGHT = 200 + getStatusBarHeight(true);
 const HEADER_COLLAPSED_HEIGHT = 56 + getStatusBarHeight(true);
-const { width: SCREEN_WIDTH } = Dimensions.get("screen")
 
 export default class App extends React.Component {
   constructor() {
@@ -26,51 +25,6 @@ export default class App extends React.Component {
     this.state = {
       scrollY: new Animated.Value(0)
     }
-  }
-  titleStyle() {
-    const { theme } = this.props;
-    return {
-      color: 'white',
-      lineHeight: this.state.scrollY.interpolate({
-        inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
-        outputRange: [30, 20],
-        extrapolate: 'clamp',
-      }),
-      fontSize: this.state.scrollY.interpolate({
-        inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
-        outputRange: [30, 20],
-        extrapolate: 'clamp',
-      }),
-    };
-  }
-  subtitleStyle() {
-    const { theme } = this.props;
-    return {
-      color: 'white',
-      lineHeight: 18,
-      fontSize: 18,
-    };
-  }
-  infoStyle() {
-    const { theme } = this.props;
-    return {
-      color: 'white',
-      lineHeight: this.state.scrollY.interpolate({
-        inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
-        outputRange: [20, 0.1],
-        extrapolate: 'clamp',
-      }),
-      opacity: this.state.scrollY.interpolate({
-        inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
-        outputRange: [1, 0],
-        extrapolate: 'clamp',
-      }),
-      fontSize: this.state.scrollY.interpolate({
-        inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
-        outputRange: [20, 0.1],
-        extrapolate: 'clamp',
-      }),
-    };
   }
 
   render() {
@@ -88,17 +42,13 @@ export default class App extends React.Component {
           <Animated.Image
             source={{ url: "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTIwNjA4NjMzODg2NTc0MDky/abraham-lincoln-9382540-2-402.jpg" }}
             resizeMethod={'resize'}
-            style={{
-              position: 'absolute',
-              right: 0,
-              width: '50%',
-              resizeMode: 'cover',
+            style={[styles.Image, {
               height: headerHeight,
               opacity: this.state.scrollY.interpolate({
                 inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
                 outputRange: [0.3, 0]
               })
-            }}
+            }]}
           />
           <Animated.View style={[this.contentStyle()]}>
             <View style={{ marginRight: 32 }}>
@@ -146,12 +96,12 @@ export default class App extends React.Component {
             renderItem={({ item }) => (
               <ListItem
                 title={item.president}
-                subtitle={(<View >
+                subtitle={(<View style={{ marginLeft: 15 }}>
                   <Text style={{ color: Colors.gray[500] }}>{item.party}</Text>
                   <Text style={{ color: Colors.gray[500] }}>{item.took_office}</Text>
                 </View>)}
-                subtitleStyle={{ color: Colors.gray[500] }}
-                leftIcon={{ name: 'person', color: Colors.gray[500] }}
+                titleStyle={{ marginLeft: 15 }}
+                leftIcon={{ name: 'person', color: Colors.gray[500], iconStyle: { marginLeft: -8 } }}
               />
             )}
           />
@@ -161,6 +111,51 @@ export default class App extends React.Component {
       </View >
 
     );
+  }
+  titleStyle() {
+    const { theme } = this.props;
+    return {
+      color: 'white',
+      lineHeight: this.state.scrollY.interpolate({
+        inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
+        outputRange: [30, 20],
+        extrapolate: 'clamp',
+      }),
+      fontSize: this.state.scrollY.interpolate({
+        inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
+        outputRange: [30, 20],
+        extrapolate: 'clamp',
+      }),
+    };
+  }
+  subtitleStyle() {
+    const { theme } = this.props;
+    return {
+      color: 'white',
+      lineHeight: 18,
+      fontSize: 18,
+    };
+  }
+  infoStyle() {
+    const { theme } = this.props;
+    return {
+      color: 'white',
+      lineHeight: this.state.scrollY.interpolate({
+        inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
+        outputRange: [20, 0.1],
+        extrapolate: 'clamp',
+      }),
+      opacity: this.state.scrollY.interpolate({
+        inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
+        outputRange: [1, 0],
+        extrapolate: 'clamp',
+      }),
+      fontSize: this.state.scrollY.interpolate({
+        inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
+        outputRange: [20, 0.1],
+        extrapolate: 'clamp',
+      }),
+    };
   }
 
   contentStyle() {
@@ -203,4 +198,10 @@ const styles = StyleSheet.create({
     padding: 10,
     paddingTop: HEADER_EXPANDED_HEIGHT
   },
+  Image: {
+    position: 'absolute',
+    right: 0,
+    width: '50%',
+    resizeMode: 'cover'
+  }
 });
