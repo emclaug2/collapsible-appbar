@@ -4,7 +4,6 @@ import {
   View,
   FlatList,
   Animated,
-  Dimensions,
   ScrollView,
   StatusBar,
   SafeAreaView
@@ -42,7 +41,7 @@ export default class App extends React.Component {
           <Animated.Image
             source={{ url: "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTIwNjA4NjMzODg2NTc0MDky/abraham-lincoln-9382540-2-402.jpg" }}
             resizeMethod={'resize'}
-            style={[styles.Image, {
+            style={[styles.image, {
               height: headerHeight,
               opacity: this.state.scrollY.interpolate({
                 inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
@@ -95,13 +94,13 @@ export default class App extends React.Component {
             keyExtractor={(item, index) => `${index}`}
             renderItem={({ item }) => (
               <ListItem
+                containerStyle={{paddingHorizontal: 16}}
                 title={item.president}
-                subtitle={(<View style={{ marginLeft: 15 }}>
+                subtitle={(<View>
                   <Text style={{ color: Colors.gray[500] }}>{item.party}</Text>
                   <Text style={{ color: Colors.gray[500] }}>{item.took_office}</Text>
                 </View>)}
-                titleStyle={{ marginLeft: 15 }}
-                leftIcon={{ name: 'person', color: Colors.gray[500], iconStyle: { marginLeft: -8 } }}
+                leftIcon={{ name: 'person', color: Colors.gray[500], iconStyle: { marginRight: 16 } }}
               />
             )}
           />
@@ -113,7 +112,6 @@ export default class App extends React.Component {
     );
   }
   titleStyle() {
-    const { theme } = this.props;
     return {
       color: 'white',
       lineHeight: this.state.scrollY.interpolate({
@@ -129,7 +127,6 @@ export default class App extends React.Component {
     };
   }
   subtitleStyle() {
-    const { theme } = this.props;
     return {
       color: 'white',
       lineHeight: 18,
@@ -137,7 +134,6 @@ export default class App extends React.Component {
     };
   }
   infoStyle() {
-    const { theme } = this.props;
     return {
       color: 'white',
       lineHeight: this.state.scrollY.interpolate({
@@ -177,7 +173,7 @@ const styles = StyleSheet.create({
   bar: {
     width: '100%',
     position: 'absolute',
-    zIndex: 9999,
+    zIndex: 1000,
     shadowColor: 'rgba(0, 0, 0, 0.3)',
     shadowOffset: {
       width: 0,
@@ -195,10 +191,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   scrollContainer: {
-    padding: 10,
     paddingTop: HEADER_EXPANDED_HEIGHT
   },
-  Image: {
+  image: {
     position: 'absolute',
     right: 0,
     width: '50%',
