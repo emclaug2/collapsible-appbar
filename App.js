@@ -8,15 +8,17 @@ import {
   StatusBar,
   SafeAreaView
 } from 'react-native';
-
+import { Platform } from '@unimodules/core';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 import * as Colors from '@pxblue/colors'
 import { ListItem, Text, Icon } from 'react-native-elements';
 import data from './data';
 
 const AnimatedSafeAreaView = Animated.createAnimatedComponent(SafeAreaView);
-const HEADER_EXPANDED_HEIGHT = 200 + getStatusBarHeight(true);
-const HEADER_COLLAPSED_HEIGHT = 56 + getStatusBarHeight(true);
+const HEADER_EXPANDED_HEIGHT = 200 + getStatusBarHeight();
+const HEADER_COLLAPSED_HEIGHT = 56 + getStatusBarHeight();
+
+const lincoln = require('./assets/lincoln.jpg');
 
 export default class App extends React.Component {
   constructor() {
@@ -37,9 +39,9 @@ export default class App extends React.Component {
       <View style={styles.container}>
 
         <StatusBar barStyle={'light-content'} />
-        <AnimatedSafeAreaView style={[styles.bar, { height: headerHeight }]}>
+        <AnimatedSafeAreaView style={[styles.bar, { height: headerHeight, paddingTop: Platform.OS === 'android' ? getStatusBarHeight() : 0 }]}>
           <Animated.Image
-            source={{ url: "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTIwNjA4NjMzODg2NTc0MDky/abraham-lincoln-9382540-2-402.jpg" }}
+            source={lincoln}
             resizeMethod={'resize'}
             style={[styles.image, {
               height: headerHeight,
