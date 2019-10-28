@@ -16,6 +16,7 @@ exports[`App Tests  App Renders 1`] = `
         "backgroundColor": "#007bc1",
         "elevation": 0,
         "height": 220,
+        "paddingTop": 0,
         "position": "absolute",
         "shadowColor": "rgba(0, 0, 0, 0.3)",
         "shadowOffset": Object {
@@ -31,11 +32,7 @@ exports[`App Tests  App Renders 1`] = `
   >
     <Image
       resizeMethod="resize"
-      source={
-        Object {
-          "url": "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTIwNjA4NjMzODg2NTc0MDky/abraham-lincoln-9382540-2-402.jpg",
-        }
-      }
+      source={1}
       style={
         Object {
           "height": 220,
