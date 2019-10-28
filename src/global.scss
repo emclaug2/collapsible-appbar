@@ -24,3 +24,55 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@import '~@pxblue/colors/palette.scss';
+
+html, body { 
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+ion-header {
+    color: map-get($pxb-white, 50);
+    --color : map-get($pxb-white, 50);
+    --background: map-get($pxb-blue, 500); 
+    background: map-get($pxb-blue, 500);
+    font-family: Open Sans, sans-serif; 
+    position: fixed;
+    border: none;
+    padding: 0;
+}
+
+ion-button{
+  color: map-get($pxb-white, 50);
+  --padding-start : 10px;
+  --padding-end : 0px;
+}
+
+.bg-image {
+    --background: map-get($pxb-blue, 500); 
+    background: map-get($pxb-blue, 500);
+    width: 100%;
+    position: relative;
+    color: #fff;
+    padding-top: calc(20px + 12px);
+    padding-top: calc(constant(safe-area-inset-top) + 12px);
+    padding-top: calc(env(safe-area-inset-top) + 12px);
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: 0;
+      background:  map-get($pxb-blue, 500);
+      position: absolute;
+      opacity: 0.7;
+      top: 0;
+    }
+    &.image {
+      background-image: url(https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTIwNjA4NjMzODg2NTc0MDky/abraham-lincoln-9382540-2-402.jpg) ;
+      background-repeat: no-repeat ;
+      background-position: right;
+      background-size: 50% 100%;
+    }
+}
