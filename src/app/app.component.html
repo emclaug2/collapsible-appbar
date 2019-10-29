@@ -1,24 +1,30 @@
 <ion-app>
   <ion-header>
-    <expandable-header [scrollArea]="mycontent" headerHeight="200" [shrinkToolbar]="shrinkToolbar" class="bg-image"
-      [ngClass]="shrinkToolbar?'':'image'">
-      <div fxLayout="row" fxLayoutAlign="space-between">
-        <ion-button size="small" fill="clear" style="padding: 0 12px;">
-          <mat-icon>menu</mat-icon>
-        </ion-button>
-        <ion-title>
-          <h4 class="mat-title" id="mainTitle">President</h4>
-          <div class="mat-body" id="subTitle" style="font-size: 16px;text-align:left;" *ngIf="!shrinkToolbar">
-            Commander in Chief
+    <ion-toolbar style="padding: 0">
+      <expandable-header [scrollArea]="mycontent" headerHeight="200" [shrinkToolbar]="shrinkToolbar"
+        class="primary bg-image">
+        <div [ngClass]="shrinkToolbar?'':'image-background'"></div>
+        <div fxLayout="row" fxLayoutAlign="start" height="100%" width="100%">
+          <ion-button size="small" fill="clear" style="margin: 0;margin-top: 10px;">
+            <mat-icon class="menu-icon">menu</mat-icon>
+          </ion-button>
+          <div style="display: flex;align-items: center;">
+            <span style="padding-left: 25px; color: #ffff">
+              <h4 class="mat-title" id="mainTitle">President</h4>
+              <div class="mat-body" id="subTitle" style="font-size: 18px;text-align:left;" *ngIf="!shrinkToolbar">
+                Commander in Chief
+              </div>
+              <div class="mat-body" style="font-size: 18px;text-align:left;">Leader of the Free World
+              </div>
+            </span>
           </div>
-          <div class="mat-body" style="font-size: 16px;text-align:left;">Leader of the Free World
-          </div>
-        </ion-title>
-      </div>
-    </expandable-header>
+
+        </div>
+      </expandable-header>
+    </ion-toolbar>
   </ion-header>
   <ion-content #mycontent [scrollEvents]="true" (ionScroll)="logScrolling($event)">
-    <mat-list style="margin-top:200px ;">
+    <mat-list style="margin-top:200px;" class="data-list">
       <mat-list-item *ngFor="let item of list;">
         <mat-icon mat-list-avatar>person</mat-icon>
         <div mat-line class="mat-small" [ngStyle]="{color: Colors.black[900]}">{{item.president}}</div>

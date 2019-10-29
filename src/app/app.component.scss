@@ -1,7 +1,3 @@
-expandable-header {
-    display: flex;
-}
-
 h4.mat-title {
     font-size: 30px;
     text-align: left;
@@ -13,7 +9,14 @@ h4.mat-title {
     padding-top: 10px;
     color: #968e8e;
 }
-ion-title.ios.title-ios {
-    padding-left: 24%;
-    padding-right: 0;
+
+.data-list {
+    padding-top: calc(30px + 15px);
+    padding-top: calc(constant(safe-area-inset-top) + 15px);
+    padding-top: calc(env(safe-area-inset-top) + 15px);
+}
+
+.menu-icon {
+    padding: 10px 0 0 20px;
+    box-sizing: content-box;
 }

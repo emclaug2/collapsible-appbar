@@ -33,10 +33,13 @@ export class ExpandableHeader {
         if (this.newHeaderHeight < 56) {
           this.newHeaderHeight = 56;
         }
+        if (this.newHeaderHeight > 200) {
+          this.newHeaderHeight = 200;
+        }
         this.renderer.setStyle(this.element.nativeElement, 'height', this.newHeaderHeight + 'px');
         if (document.getElementById('mainTitle')) {
-          if ((this.newHeaderHeight / 3.5) < 30) {
-            document.getElementById('mainTitle').style.fontSize = (this.newHeaderHeight / 3.5) + 'px';
+          if ((this.newHeaderHeight / 3) < 30) {
+            document.getElementById('mainTitle').style.fontSize = (this.newHeaderHeight / 3) + 'px';
           }
         }
         if (document.getElementById('subTitle')) {
