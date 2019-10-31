@@ -34,7 +34,7 @@ html, body {
 }
 expandable-header {
   display: flex;
-  overflow: hidden;
+  // overflow: hidden;
   --background: map-get($pxb-blue, 500); 
   background: map-get($pxb-blue, 500);
 

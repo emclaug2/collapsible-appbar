@@ -14,7 +14,7 @@ import * as Colors from '@pxblue/colors';
 export class AppComponent {
 
   list = presidents;
-  private readonly SHRINK_TOP_SCROLL_POSITION = 130;
+  private readonly SHRINK_TOP_SCROLL_POSITION = 144;
   shrinkToolbar = false;
   scrollingSubscription: any;
   scrollTop: any;

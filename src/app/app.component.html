@@ -1,20 +1,20 @@
 <ion-app>
   <ion-header>
     <ion-toolbar style="padding: 0">
-      <expandable-header [scrollArea]="mycontent" headerHeight="200" [shrinkToolbar]="shrinkToolbar"
-        class="primary bg-image">
-        <div [ngClass]="shrinkToolbar?'':'image-background'"></div>
+      <expandable-header [scrollArea]="mycontent" headerHeight="200" [mainTitle]="mainTitle" [subTitle]="subTitle"
+        [backgroundImage]="backgroundImage" class="primary bg-image">
+        <div [ngClass]="shrinkToolbar?'':'image-background'" #backgroundImage></div>
         <div fxLayout="row" fxLayoutAlign="start" height="100%" width="100%">
           <ion-button size="small" fill="clear" style="margin: 0;margin-top: 10px;">
             <mat-icon class="menu-icon">menu</mat-icon>
           </ion-button>
           <div style="display: flex;align-items: center;">
-            <span style="padding-left: 25px; color: #ffff">
-              <h4 class="mat-title" id="mainTitle">President</h4>
-              <div class="mat-body" id="subTitle" style="font-size: 18px;text-align:left;" *ngIf="!shrinkToolbar">
+            <span style="padding-left: 25px; color: #fff;font-weight: bold;">
+              <h4 class="mat-title" #mainTitle>President</h4>
+              <div class="mat-body" #subTitle>
                 Commander in Chief
               </div>
-              <div class="mat-body" style="font-size: 18px;text-align:left;">Leader of the Free World
+              <div class="mat-body">Leader of the Free World
               </div>
             </span>
           </div>
