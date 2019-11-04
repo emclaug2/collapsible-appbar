@@ -1,0 +1,73 @@
+@import "~@pxblue/colors/palette.scss";
+
+expandable-header {
+  display: flex;
+  background: map-get($pxb-blue, 500);
+}
+.expandable-header {
+  --background: map-get($pxb-blue, 500);
+  background: map-get($pxb-blue, 500);
+  width: 100%;
+  position: relative;
+  color: #fff;
+  padding: 0;
+  padding-top: calc(constant(safe-area-inset-top));
+  padding-top: calc(env(safe-area-inset-top));
+  box-sizing: content-box;
+}
+.image-background {
+  background-image: url(https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTIwNjA4NjMzODg2NTc0MDky/abraham-lincoln-9382540-2-402.jpg);
+  opacity: 0.3;
+  position: absolute;
+  width: 70%;
+  max-width: 400px;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  top: 0;
+  right: 0;
+  padding: 0;
+}
+.header-content {
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding: 16px;
+}
+.menu-icon {
+  margin-right: 32px;
+  height: 24px;
+}
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 10;
+  .mat-title {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 0;
+    line-height: 100%;
+  }
+  .mat-subheading-1 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 100%;
+  }
+  .mat-subheading-2 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 100%;
+  }
+}
+.data-list {
+  margin-top: calc(230px);
+  margin-top: calc(200px + constant(safe-area-inset-top));
+  margin-top: calc(200px + env(safe-area-inset-top));
+}
+.mat-list-avatar {
+  line-height: 40px;
+  color: map-get($pxb-black, 300);
+}

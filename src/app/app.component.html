@@ -1,3 +1,32 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-header>
+    <ion-toolbar style="padding: 0">
+      <expandable-header [scrollArea]="mycontent" headerHeight="200" [mainTitle]="mainTitle" [hiddenTitle]="hiddenTitle"
+        [backgroundImage]="backgroundImage" class="primary expandable-header">
+        <div class='image-background' #backgroundImage></div>
+        <div class="header-content">
+          <div fxLayout="row" fxLayoutAlign="start" height="100%" width="100%">
+            <ion-button size="small" fill="clear">
+              <mat-icon class="menu-icon">menu</mat-icon>
+            </ion-button>
+            <div class="title-wrapper">
+              <h4 class="mat-title" #mainTitle style="font-weight: 600;">President</h4>
+              <div class="mat-subheading-1" #hiddenTitle style="font-weight: 400;">Commander in Chief</div>
+              <div class="mat-subheading-2" style="font-weight: 300;">Leader of the Free World</div>
+            </div>
+          </div>
+        </div>
+      </expandable-header>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content #mycontent [scrollEvents]="true">
+    <mat-list class="data-list">
+      <mat-list-item *ngFor="let item of list;" [ngStyle]="{color: Colors.black[900]}">
+        <mat-icon mat-list-avatar>person</mat-icon>
+        <div mat-line class="mat-small">{{item.president}}</div>
+        <div mat-line>{{item.party}}</div>
+        <div mat-line>{{item.took_office}}</div>
+      </mat-list-item>
+    </mat-list>
+  </ion-content>
 </ion-app>
