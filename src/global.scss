@@ -32,13 +32,7 @@ html, body {
   height: 100%;
   width: 100%;
 }
-expandable-header {
-  display: flex;
-  // overflow: hidden;
-  --background: map-get($pxb-blue, 500); 
-  background: map-get($pxb-blue, 500);
 
-}
 ion-header, ion-toolbar {
     color: map-get($pxb-white, 50);
     --color : map-get($pxb-white, 50);
@@ -46,7 +40,12 @@ ion-header, ion-toolbar {
     background: map-get($pxb-blue, 500);
     position: fixed;
     border: none;
+    --padding-top: 0;
+    --padding-start: 0;
+    --padding-bottom: 0;
+    --padding-end: 0;
     padding: 0;
+    margin: 0;
 }
 
 ion-button{
@@ -54,32 +53,5 @@ ion-button{
   --padding-start : 0px;
   --padding-end : 0px;
   margin: 0;
-}
-
-.expandable-header{
-    --background: map-get($pxb-blue, 500); 
-    background: map-get($pxb-blue, 500);
-    width: 100%;
-    position: relative;
-    color: #fff;
-    padding: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: calc(constant(safe-area-inset-top) + 16px);
-    padding-top: calc(env(safe-area-inset-top) + 16px);
-    box-sizing: border-box;
-}
-
-.image-background {
-  background-image: url(https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTIwNjA4NjMzODg2NTc0MDky/abraham-lincoln-9382540-2-402.jpg) ;
-  opacity: 0.3;
-  position: absolute;
-  width: 70%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
-  top:0;
-  right: 0;
-  padding: 0;
+  height: 24px;
 }
