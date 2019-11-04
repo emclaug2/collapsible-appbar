@@ -44,7 +44,6 @@ ion-header, ion-toolbar {
     --color : map-get($pxb-white, 50);
     --background: map-get($pxb-blue, 500); 
     background: map-get($pxb-blue, 500);
-    font-family: Open Sans, sans-serif; 
     position: fixed;
     border: none;
     padding: 0;
@@ -54,24 +53,21 @@ ion-button{
   color: map-get($pxb-white, 50);
   --padding-start : 0px;
   --padding-end : 0px;
+  margin: 0;
 }
 
-
-.flex-layout{
-  height: 100%;
-  width: 100%;
-}
-.bg-image {
+.expandable-header{
     --background: map-get($pxb-blue, 500); 
     background: map-get($pxb-blue, 500);
     width: 100%;
     position: relative;
     color: #fff;
-    padding: 0;
-    padding-top: 30px;
-    padding-top: calc(constant(safe-area-inset-top));
-    padding-top: calc(env(safe-area-inset-top));
-    box-sizing: content-box;
+    padding: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: calc(constant(safe-area-inset-top) + 16px);
+    padding-top: calc(env(safe-area-inset-top) + 16px);
+    box-sizing: border-box;
 }
 
 .image-background {
@@ -83,7 +79,6 @@ ion-button{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
-  // background-size: 50% 100%;
   top:0;
   right: 0;
   padding: 0;
