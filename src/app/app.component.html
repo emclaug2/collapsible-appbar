@@ -1,35 +1,31 @@
 <ion-app>
   <ion-header>
     <ion-toolbar style="padding: 0">
-      <expandable-header [scrollArea]="mycontent" headerHeight="200" [mainTitle]="mainTitle" [subTitle]="subTitle"
+      <expandable-header [scrollArea]="mycontent" headerHeight="200" [mainTitle]="mainTitle" [hiddenTitle]="hiddenTitle"
         [backgroundImage]="backgroundImage" class="primary bg-image">
-        <div [ngClass]="shrinkToolbar?'':'image-background'" #backgroundImage></div>
+        <div class='image-background' #backgroundImage></div>
         <div fxLayout="row" fxLayoutAlign="start" height="100%" width="100%">
-          <ion-button size="small" fill="clear" style="margin: 0;margin-top: 10px;">
+          <ion-button size="small" fill="clear">
             <mat-icon class="menu-icon">menu</mat-icon>
           </ion-button>
-          <div style="display: flex;align-items: center;">
-            <span style="padding-left: 25px; color: #fff;font-weight: bold;">
-              <h4 class="mat-title" #mainTitle>President</h4>
-              <div class="mat-body" #subTitle>
-                Commander in Chief
-              </div>
-              <div class="mat-body">Leader of the Free World
-              </div>
-            </span>
+          <div class="title-cont">
+            <div class="title-body">
+              <h4 class="mat-title" #mainTitle style="font-weight: 600;">President</h4>
+              <div class="mat-body" #hiddenTitle style="font-weight: 400;">Commander in Chief</div>
+              <div class="mat-body" style="font-weight: 300;">Leader of the Free World</div>
+            </div>
           </div>
-
         </div>
       </expandable-header>
     </ion-toolbar>
   </ion-header>
-  <ion-content #mycontent [scrollEvents]="true" (ionScroll)="logScrolling($event)">
+  <ion-content #mycontent [scrollEvents]="true">
     <mat-list style="margin-top:200px;" class="data-list">
-      <mat-list-item *ngFor="let item of list;">
+      <mat-list-item *ngFor="let item of list;" [ngStyle]="{color: Colors.black[900]}">
         <mat-icon mat-list-avatar>person</mat-icon>
-        <div mat-line class="mat-small" [ngStyle]="{color: Colors.black[900]}">{{item.president}}</div>
-        <div mat-line [ngStyle]="{color: Colors.gray[800]}">{{item.party}}</div>
-        <div mat-line [ngStyle]="{color: Colors.gray[800]}">{{item.took_office}}</div>
+        <div mat-line class="mat-small">{{item.president}}</div>
+        <div mat-line>{{item.party}}</div>
+        <div mat-line>{{item.took_office}}</div>
       </mat-list-item>
     </mat-list>
   </ion-content>

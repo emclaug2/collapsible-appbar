@@ -68,15 +68,15 @@ ion-button{
     position: relative;
     color: #fff;
     padding: 0;
-    padding-top: calc(30px + 4px);
-    padding-top: calc(constant(safe-area-inset-top) + 4px);
-    padding-top: calc(env(safe-area-inset-top) + 4px);
+    padding-top: 30px;
+    padding-top: calc(constant(safe-area-inset-top));
+    padding-top: calc(env(safe-area-inset-top));
     box-sizing: content-box;
 }
 
 .image-background {
   background-image: url(https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTIwNjA4NjMzODg2NTc0MDky/abraham-lincoln-9382540-2-402.jpg) ;
-  opacity: 0.2;
+  opacity: 0.3;
   position: absolute;
   width: 70%;
   height: 100%;

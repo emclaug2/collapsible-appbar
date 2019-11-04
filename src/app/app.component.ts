@@ -14,10 +14,6 @@ import * as Colors from '@pxblue/colors';
 export class AppComponent {
 
   list = presidents;
-  private readonly SHRINK_TOP_SCROLL_POSITION = 144;
-  shrinkToolbar = false;
-  scrollingSubscription: any;
-  scrollTop: any;
   Colors: Object = Colors;
 
   constructor(
@@ -34,9 +30,5 @@ export class AppComponent {
       this.splashScreen.hide();
 
     });
-  }
-
-  logScrolling(scrollTop: any) {
-    this.shrinkToolbar = scrollTop.detail.scrollTop > this.SHRINK_TOP_SCROLL_POSITION ? true : false;
   }
 }

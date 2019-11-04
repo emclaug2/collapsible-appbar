@@ -10,11 +10,11 @@ export class ExpandableHeader implements OnInit {
   @Input('scrollArea') scrollArea: any;
   @Input('headerHeight') headerHeight: number;
   @Input('mainTitle') mainTitle: ElementRef;
-  @Input('subTitle') subTitle: ElementRef;
+  @Input('hiddenTitle') hiddenTitle: ElementRef;
   @Input('backgroundImage') backgroundImage: ElementRef;
 
-  private headerMaxHeight: number = 200;
-  private headerMinHeight: number = 56;
+  private HEADER_MAX_HEIGHT: number = 200;
+  private HEADER_MIN_HEIGHT: number = 56;
 
   newHeaderHeight: any;
 
@@ -33,21 +33,26 @@ export class ExpandableHeader implements OnInit {
   resizeHeader(ev: any) {
     if (ev) {
       this.domCtrl.write(() => {
-        this.newHeaderHeight = Math.min(this.headerMaxHeight, Math.max(this.headerMinHeight, this.headerHeight - ev.detail.scrollTop));
+        this.newHeaderHeight = Math.min(this.HEADER_MAX_HEIGHT, Math.max(this.HEADER_MIN_HEIGHT, this.headerHeight - ev.detail.scrollTop));
         this.renderer.setStyle(this.element.nativeElement, 'height', this.newHeaderHeight + 'px');
         //mainTitle Font
-        const fontSize = 20 + ((this.newHeaderHeight - this.headerMinHeight) / (this.headerMaxHeight - this.headerMinHeight)) * 10;
+        const fontSize = 20 + this.scaleFactor() * 10;
         this.renderer.setStyle(this.mainTitle, 'font-size', fontSize + 'px');
-        //SubTitle Font
-        const subTitlefontSize = 0 + ((this.newHeaderHeight - this.headerMinHeight) / (this.headerMaxHeight - this.headerMinHeight)) * 20;
-        const subTitleopacity = 0 + ((this.newHeaderHeight - this.headerMinHeight) / (this.headerMaxHeight - this.headerMinHeight)) * 1;
-        this.renderer.setStyle(this.subTitle, 'font-size', subTitlefontSize + 'px');
-        this.renderer.setStyle(this.subTitle, 'line-height', subTitlefontSize + 'px');
-        this.renderer.setStyle(this.subTitle, 'opacity', subTitleopacity.toString());
+
+        //hiddenTitle Font
+        const hiddenTitlefontSize = 0 + this.scaleFactor() * 20;
+        const hiddenTitleopacity = 0 + this.scaleFactor() * 1;
+        this.renderer.setStyle(this.hiddenTitle, 'font-size', hiddenTitlefontSize + 'px');
+        this.renderer.setStyle(this.hiddenTitle, 'opacity', hiddenTitleopacity.toString());
+
         //backgroundImage Font
-        const opacity = 0 + ((this.newHeaderHeight - this.headerMinHeight) / (this.headerMaxHeight - this.headerMinHeight)) * 0.3;
+        const opacity = 0 + this.scaleFactor() * 0.3;
         this.renderer.setStyle(this.backgroundImage, 'opacity', opacity.toString());
       });
     }
+  }
+
+  scaleFactor() {
+    return ((this.newHeaderHeight - this.HEADER_MIN_HEIGHT) / (this.HEADER_MAX_HEIGHT - this.HEADER_MIN_HEIGHT));
   }
 }
