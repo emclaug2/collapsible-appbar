@@ -6,7 +6,7 @@ This project demonstrates how to build a basic collapsible-appbar. At the top of
 | Angular | [![CircleCI](https://circleci.com/gh/pxblue/collapsible-appbar/tree/angular.svg?style=shield)](https://circleci.com/gh/pxblue/collapsible-appbar/tree/angular) | [View on Stackblitz](https://stackblitz.com/github/pxblue/collapsible-appbar/tree/angular)
 | React | [![CircleCI](https://circleci.com/gh/pxblue/collapsible-appbar/tree/react.svg?style=shield)](https://circleci.com/gh/pxblue/collapsible-appbar/tree/react) | [View on Code Sandbox](https://codesandbox.io/s/github/pxblue/collapsible-appbar/tree/react)
 | Ionic | [![CircleCI](https://circleci.com/gh/pxblue/collapsible-appbar/tree/ionic.svg?style=shield)](https://circleci.com/gh/pxblue/collapsible-appbar/tree/ionic) | [View on Stackblitz](https://stackblitz.com/github/pxblue/collapsible-appbar/tree/ionic)
-| React Native | [![CircleCI](https://circleci.com/gh/pxblue/collapsible-appbar/tree/reactnative.svg?style=shield)](https://circleci.com/gh/pxblue/collapsible-appbar/tree/reactnative) | [View on Snack](https://snack.expo.io/@git/github.com/pxblue/collapsible-appbar@reactnative)
+| React Native | [![CircleCI](https://circleci.com/gh/pxblue/collapsible-appbar/tree/reactnative.svg?style=shield)](https://circleci.com/gh/pxblue/collapsible-appbar/tree/reactnative) | [View on Snack](https://snack.expo.io/@git/github.com/pxblue/collapsible-appbar@reactnative?preview=true&platform=ios)
 
 ## Running the Example
 ### Angular
