@@ -38,11 +38,13 @@ export class ExpandableHeader implements OnInit {
         //mainTitle Font
         const fontSize = 20 + this.scaleFactor() * 10;
         this.renderer.setStyle(this.mainTitle, 'font-size', fontSize + 'px');
+        this.renderer.setStyle(this.mainTitle, 'line-height', fontSize + 'px');
 
         //hiddenTitle Font
         const hiddenTitlefontSize = 0 + this.scaleFactor() * 20;
         const hiddenTitleopacity = 0 + this.scaleFactor() * 1;
         this.renderer.setStyle(this.hiddenTitle, 'font-size', hiddenTitlefontSize + 'px');
+        this.renderer.setStyle(this.hiddenTitle, 'line-height', hiddenTitlefontSize + 'px');
         this.renderer.setStyle(this.hiddenTitle, 'opacity', hiddenTitleopacity.toString());
 
         //backgroundImage Font
