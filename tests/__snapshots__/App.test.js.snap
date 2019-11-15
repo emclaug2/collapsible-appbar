@@ -690,141 +690,76 @@ exports[`App Tests  App Renders 1`] = `
                 >
                   <Text
                     style={
-                      Object {
-                        "backgroundColor": "transparent",
-                        "fontSize": 17,
-                      }
-                    }
-                    testID="listItemTitle"
-                    theme={
-                      Object {
-                        "colors": Object {
-                          "disabled": "hsl(208, 8%, 90%)",
-                          "divider": "#bcbbc1",
-                          "error": "#ff190c",
-                          "grey0": "#393e42",
-                          "grey1": "#43484d",
-                          "grey2": "#5e6977",
-                          "grey3": "#86939e",
-                          "grey4": "#bdc6cf",
-                          "grey5": "#e1e8ee",
-                          "greyOutline": "#bbb",
-                          "platform": Object {
-                            "android": Object {
-                              "error": "#f44336",
-                              "primary": "#2196f3",
-                              "secondary": "#9C27B0",
-                              "success": "#4caf50",
-                              "warning": "#ffeb3b",
-                            },
-                            "ios": Object {
-                              "error": "#ff3b30",
-                              "primary": "#007aff",
-                              "secondary": "#5856d6",
-                              "success": "#4cd964",
-                              "warning": "#ffcc00",
-                            },
-                          },
-                          "primary": "#2089dc",
-                          "searchBg": "#303337",
-                          "secondary": "#8F0CE8",
-                          "success": "#52c41a",
-                          "warning": "#faad14",
+                      Array [
+                        Object {
+                          "color": "#000000",
                         },
-                      }
+                        Object {
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        },
+                        Object {
+                          "fontFamily": "System",
+                          "fontWeight": "600",
+                        },
+                        Object {
+                          "marginLeft": 16,
+                        },
+                      ]
                     }
                   >
                     George Washington
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 16,
+                      }
+                    }
+                  >
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       No Party
                     </Text>
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       1789-04-30
@@ -915,141 +850,76 @@ exports[`App Tests  App Renders 1`] = `
                 >
                   <Text
                     style={
-                      Object {
-                        "backgroundColor": "transparent",
-                        "fontSize": 17,
-                      }
-                    }
-                    testID="listItemTitle"
-                    theme={
-                      Object {
-                        "colors": Object {
-                          "disabled": "hsl(208, 8%, 90%)",
-                          "divider": "#bcbbc1",
-                          "error": "#ff190c",
-                          "grey0": "#393e42",
-                          "grey1": "#43484d",
-                          "grey2": "#5e6977",
-                          "grey3": "#86939e",
-                          "grey4": "#bdc6cf",
-                          "grey5": "#e1e8ee",
-                          "greyOutline": "#bbb",
-                          "platform": Object {
-                            "android": Object {
-                              "error": "#f44336",
-                              "primary": "#2196f3",
-                              "secondary": "#9C27B0",
-                              "success": "#4caf50",
-                              "warning": "#ffeb3b",
-                            },
-                            "ios": Object {
-                              "error": "#ff3b30",
-                              "primary": "#007aff",
-                              "secondary": "#5856d6",
-                              "success": "#4cd964",
-                              "warning": "#ffcc00",
-                            },
-                          },
-                          "primary": "#2089dc",
-                          "searchBg": "#303337",
-                          "secondary": "#8F0CE8",
-                          "success": "#52c41a",
-                          "warning": "#faad14",
+                      Array [
+                        Object {
+                          "color": "#000000",
                         },
-                      }
+                        Object {
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        },
+                        Object {
+                          "fontFamily": "System",
+                          "fontWeight": "600",
+                        },
+                        Object {
+                          "marginLeft": 16,
+                        },
+                      ]
                     }
                   >
                     John Adams
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 16,
+                      }
+                    }
+                  >
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       Federalist
                     </Text>
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       1797-03-04
@@ -1140,141 +1010,76 @@ exports[`App Tests  App Renders 1`] = `
                 >
                   <Text
                     style={
-                      Object {
-                        "backgroundColor": "transparent",
-                        "fontSize": 17,
-                      }
-                    }
-                    testID="listItemTitle"
-                    theme={
-                      Object {
-                        "colors": Object {
-                          "disabled": "hsl(208, 8%, 90%)",
-                          "divider": "#bcbbc1",
-                          "error": "#ff190c",
-                          "grey0": "#393e42",
-                          "grey1": "#43484d",
-                          "grey2": "#5e6977",
-                          "grey3": "#86939e",
-                          "grey4": "#bdc6cf",
-                          "grey5": "#e1e8ee",
-                          "greyOutline": "#bbb",
-                          "platform": Object {
-                            "android": Object {
-                              "error": "#f44336",
-                              "primary": "#2196f3",
-                              "secondary": "#9C27B0",
-                              "success": "#4caf50",
-                              "warning": "#ffeb3b",
-                            },
-                            "ios": Object {
-                              "error": "#ff3b30",
-                              "primary": "#007aff",
-                              "secondary": "#5856d6",
-                              "success": "#4cd964",
-                              "warning": "#ffcc00",
-                            },
-                          },
-                          "primary": "#2089dc",
-                          "searchBg": "#303337",
-                          "secondary": "#8F0CE8",
-                          "success": "#52c41a",
-                          "warning": "#faad14",
+                      Array [
+                        Object {
+                          "color": "#000000",
                         },
-                      }
+                        Object {
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        },
+                        Object {
+                          "fontFamily": "System",
+                          "fontWeight": "600",
+                        },
+                        Object {
+                          "marginLeft": 16,
+                        },
+                      ]
                     }
                   >
                     Thomas Jefferson
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 16,
+                      }
+                    }
+                  >
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       Democratic-Republican
                     </Text>
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       1801-03-04
@@ -1365,141 +1170,76 @@ exports[`App Tests  App Renders 1`] = `
                 >
                   <Text
                     style={
-                      Object {
-                        "backgroundColor": "transparent",
-                        "fontSize": 17,
-                      }
-                    }
-                    testID="listItemTitle"
-                    theme={
-                      Object {
-                        "colors": Object {
-                          "disabled": "hsl(208, 8%, 90%)",
-                          "divider": "#bcbbc1",
-                          "error": "#ff190c",
-                          "grey0": "#393e42",
-                          "grey1": "#43484d",
-                          "grey2": "#5e6977",
-                          "grey3": "#86939e",
-                          "grey4": "#bdc6cf",
-                          "grey5": "#e1e8ee",
-                          "greyOutline": "#bbb",
-                          "platform": Object {
-                            "android": Object {
-                              "error": "#f44336",
-                              "primary": "#2196f3",
-                              "secondary": "#9C27B0",
-                              "success": "#4caf50",
-                              "warning": "#ffeb3b",
-                            },
-                            "ios": Object {
-                              "error": "#ff3b30",
-                              "primary": "#007aff",
-                              "secondary": "#5856d6",
-                              "success": "#4cd964",
-                              "warning": "#ffcc00",
-                            },
-                          },
-                          "primary": "#2089dc",
-                          "searchBg": "#303337",
-                          "secondary": "#8F0CE8",
-                          "success": "#52c41a",
-                          "warning": "#faad14",
+                      Array [
+                        Object {
+                          "color": "#000000",
                         },
-                      }
+                        Object {
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        },
+                        Object {
+                          "fontFamily": "System",
+                          "fontWeight": "600",
+                        },
+                        Object {
+                          "marginLeft": 16,
+                        },
+                      ]
                     }
                   >
                     James Madison
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 16,
+                      }
+                    }
+                  >
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       Democratic-Republican
                     </Text>
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       1809-03-04
@@ -1590,141 +1330,76 @@ exports[`App Tests  App Renders 1`] = `
                 >
                   <Text
                     style={
-                      Object {
-                        "backgroundColor": "transparent",
-                        "fontSize": 17,
-                      }
-                    }
-                    testID="listItemTitle"
-                    theme={
-                      Object {
-                        "colors": Object {
-                          "disabled": "hsl(208, 8%, 90%)",
-                          "divider": "#bcbbc1",
-                          "error": "#ff190c",
-                          "grey0": "#393e42",
-                          "grey1": "#43484d",
-                          "grey2": "#5e6977",
-                          "grey3": "#86939e",
-                          "grey4": "#bdc6cf",
-                          "grey5": "#e1e8ee",
-                          "greyOutline": "#bbb",
-                          "platform": Object {
-                            "android": Object {
-                              "error": "#f44336",
-                              "primary": "#2196f3",
-                              "secondary": "#9C27B0",
-                              "success": "#4caf50",
-                              "warning": "#ffeb3b",
-                            },
-                            "ios": Object {
-                              "error": "#ff3b30",
-                              "primary": "#007aff",
-                              "secondary": "#5856d6",
-                              "success": "#4cd964",
-                              "warning": "#ffcc00",
-                            },
-                          },
-                          "primary": "#2089dc",
-                          "searchBg": "#303337",
-                          "secondary": "#8F0CE8",
-                          "success": "#52c41a",
-                          "warning": "#faad14",
+                      Array [
+                        Object {
+                          "color": "#000000",
                         },
-                      }
+                        Object {
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        },
+                        Object {
+                          "fontFamily": "System",
+                          "fontWeight": "600",
+                        },
+                        Object {
+                          "marginLeft": 16,
+                        },
+                      ]
                     }
                   >
                     James Monroe
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 16,
+                      }
+                    }
+                  >
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       Democratic-Republican
                     </Text>
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       1817-03-04
@@ -1815,141 +1490,76 @@ exports[`App Tests  App Renders 1`] = `
                 >
                   <Text
                     style={
-                      Object {
-                        "backgroundColor": "transparent",
-                        "fontSize": 17,
-                      }
-                    }
-                    testID="listItemTitle"
-                    theme={
-                      Object {
-                        "colors": Object {
-                          "disabled": "hsl(208, 8%, 90%)",
-                          "divider": "#bcbbc1",
-                          "error": "#ff190c",
-                          "grey0": "#393e42",
-                          "grey1": "#43484d",
-                          "grey2": "#5e6977",
-                          "grey3": "#86939e",
-                          "grey4": "#bdc6cf",
-                          "grey5": "#e1e8ee",
-                          "greyOutline": "#bbb",
-                          "platform": Object {
-                            "android": Object {
-                              "error": "#f44336",
-                              "primary": "#2196f3",
-                              "secondary": "#9C27B0",
-                              "success": "#4caf50",
-                              "warning": "#ffeb3b",
-                            },
-                            "ios": Object {
-                              "error": "#ff3b30",
-                              "primary": "#007aff",
-                              "secondary": "#5856d6",
-                              "success": "#4cd964",
-                              "warning": "#ffcc00",
-                            },
-                          },
-                          "primary": "#2089dc",
-                          "searchBg": "#303337",
-                          "secondary": "#8F0CE8",
-                          "success": "#52c41a",
-                          "warning": "#faad14",
+                      Array [
+                        Object {
+                          "color": "#000000",
                         },
-                      }
+                        Object {
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        },
+                        Object {
+                          "fontFamily": "System",
+                          "fontWeight": "600",
+                        },
+                        Object {
+                          "marginLeft": 16,
+                        },
+                      ]
                     }
                   >
                     John Quincy Adams
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 16,
+                      }
+                    }
+                  >
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       Democratic-Republican
                     </Text>
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       1825-03-04
@@ -2040,141 +1650,76 @@ exports[`App Tests  App Renders 1`] = `
                 >
                   <Text
                     style={
-                      Object {
-                        "backgroundColor": "transparent",
-                        "fontSize": 17,
-                      }
-                    }
-                    testID="listItemTitle"
-                    theme={
-                      Object {
-                        "colors": Object {
-                          "disabled": "hsl(208, 8%, 90%)",
-                          "divider": "#bcbbc1",
-                          "error": "#ff190c",
-                          "grey0": "#393e42",
-                          "grey1": "#43484d",
-                          "grey2": "#5e6977",
-                          "grey3": "#86939e",
-                          "grey4": "#bdc6cf",
-                          "grey5": "#e1e8ee",
-                          "greyOutline": "#bbb",
-                          "platform": Object {
-                            "android": Object {
-                              "error": "#f44336",
-                              "primary": "#2196f3",
-                              "secondary": "#9C27B0",
-                              "success": "#4caf50",
-                              "warning": "#ffeb3b",
-                            },
-                            "ios": Object {
-                              "error": "#ff3b30",
-                              "primary": "#007aff",
-                              "secondary": "#5856d6",
-                              "success": "#4cd964",
-                              "warning": "#ffcc00",
-                            },
-                          },
-                          "primary": "#2089dc",
-                          "searchBg": "#303337",
-                          "secondary": "#8F0CE8",
-                          "success": "#52c41a",
-                          "warning": "#faad14",
+                      Array [
+                        Object {
+                          "color": "#000000",
                         },
-                      }
+                        Object {
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        },
+                        Object {
+                          "fontFamily": "System",
+                          "fontWeight": "600",
+                        },
+                        Object {
+                          "marginLeft": 16,
+                        },
+                      ]
                     }
                   >
                     Andrew Jackson
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 16,
+                      }
+                    }
+                  >
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       Democratic
                     </Text>
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       1829-03-04
@@ -2265,141 +1810,76 @@ exports[`App Tests  App Renders 1`] = `
                 >
                   <Text
                     style={
-                      Object {
-                        "backgroundColor": "transparent",
-                        "fontSize": 17,
-                      }
-                    }
-                    testID="listItemTitle"
-                    theme={
-                      Object {
-                        "colors": Object {
-                          "disabled": "hsl(208, 8%, 90%)",
-                          "divider": "#bcbbc1",
-                          "error": "#ff190c",
-                          "grey0": "#393e42",
-                          "grey1": "#43484d",
-                          "grey2": "#5e6977",
-                          "grey3": "#86939e",
-                          "grey4": "#bdc6cf",
-                          "grey5": "#e1e8ee",
-                          "greyOutline": "#bbb",
-                          "platform": Object {
-                            "android": Object {
-                              "error": "#f44336",
-                              "primary": "#2196f3",
-                              "secondary": "#9C27B0",
-                              "success": "#4caf50",
-                              "warning": "#ffeb3b",
-                            },
-                            "ios": Object {
-                              "error": "#ff3b30",
-                              "primary": "#007aff",
-                              "secondary": "#5856d6",
-                              "success": "#4cd964",
-                              "warning": "#ffcc00",
-                            },
-                          },
-                          "primary": "#2089dc",
-                          "searchBg": "#303337",
-                          "secondary": "#8F0CE8",
-                          "success": "#52c41a",
-                          "warning": "#faad14",
+                      Array [
+                        Object {
+                          "color": "#000000",
                         },
-                      }
+                        Object {
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        },
+                        Object {
+                          "fontFamily": "System",
+                          "fontWeight": "600",
+                        },
+                        Object {
+                          "marginLeft": 16,
+                        },
+                      ]
                     }
                   >
                     Martin Van Buren
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 16,
+                      }
+                    }
+                  >
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       Democratic
                     </Text>
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       1837-03-04
@@ -2490,141 +1970,76 @@ exports[`App Tests  App Renders 1`] = `
                 >
                   <Text
                     style={
-                      Object {
-                        "backgroundColor": "transparent",
-                        "fontSize": 17,
-                      }
-                    }
-                    testID="listItemTitle"
-                    theme={
-                      Object {
-                        "colors": Object {
-                          "disabled": "hsl(208, 8%, 90%)",
-                          "divider": "#bcbbc1",
-                          "error": "#ff190c",
-                          "grey0": "#393e42",
-                          "grey1": "#43484d",
-                          "grey2": "#5e6977",
-                          "grey3": "#86939e",
-                          "grey4": "#bdc6cf",
-                          "grey5": "#e1e8ee",
-                          "greyOutline": "#bbb",
-                          "platform": Object {
-                            "android": Object {
-                              "error": "#f44336",
-                              "primary": "#2196f3",
-                              "secondary": "#9C27B0",
-                              "success": "#4caf50",
-                              "warning": "#ffeb3b",
-                            },
-                            "ios": Object {
-                              "error": "#ff3b30",
-                              "primary": "#007aff",
-                              "secondary": "#5856d6",
-                              "success": "#4cd964",
-                              "warning": "#ffcc00",
-                            },
-                          },
-                          "primary": "#2089dc",
-                          "searchBg": "#303337",
-                          "secondary": "#8F0CE8",
-                          "success": "#52c41a",
-                          "warning": "#faad14",
+                      Array [
+                        Object {
+                          "color": "#000000",
                         },
-                      }
+                        Object {
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        },
+                        Object {
+                          "fontFamily": "System",
+                          "fontWeight": "600",
+                        },
+                        Object {
+                          "marginLeft": 16,
+                        },
+                      ]
                     }
                   >
                     William Henry Harrison
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 16,
+                      }
+                    }
+                  >
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       Whig
                     </Text>
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       1841-03-04
@@ -2715,141 +2130,76 @@ exports[`App Tests  App Renders 1`] = `
                 >
                   <Text
                     style={
-                      Object {
-                        "backgroundColor": "transparent",
-                        "fontSize": 17,
-                      }
-                    }
-                    testID="listItemTitle"
-                    theme={
-                      Object {
-                        "colors": Object {
-                          "disabled": "hsl(208, 8%, 90%)",
-                          "divider": "#bcbbc1",
-                          "error": "#ff190c",
-                          "grey0": "#393e42",
-                          "grey1": "#43484d",
-                          "grey2": "#5e6977",
-                          "grey3": "#86939e",
-                          "grey4": "#bdc6cf",
-                          "grey5": "#e1e8ee",
-                          "greyOutline": "#bbb",
-                          "platform": Object {
-                            "android": Object {
-                              "error": "#f44336",
-                              "primary": "#2196f3",
-                              "secondary": "#9C27B0",
-                              "success": "#4caf50",
-                              "warning": "#ffeb3b",
-                            },
-                            "ios": Object {
-                              "error": "#ff3b30",
-                              "primary": "#007aff",
-                              "secondary": "#5856d6",
-                              "success": "#4cd964",
-                              "warning": "#ffcc00",
-                            },
-                          },
-                          "primary": "#2089dc",
-                          "searchBg": "#303337",
-                          "secondary": "#8F0CE8",
-                          "success": "#52c41a",
-                          "warning": "#faad14",
+                      Array [
+                        Object {
+                          "color": "#000000",
                         },
-                      }
+                        Object {
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        },
+                        Object {
+                          "fontFamily": "System",
+                          "fontWeight": "600",
+                        },
+                        Object {
+                          "marginLeft": 16,
+                        },
+                      ]
                     }
                   >
                     John Tyler
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 16,
+                      }
+                    }
+                  >
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       Whig
                     </Text>
                     <Text
                       style={
-                        Object {
-                          "color": "#727e84",
-                        }
-                      }
-                      theme={
-                        Object {
-                          "colors": Object {
-                            "disabled": "hsl(208, 8%, 90%)",
-                            "divider": "#bcbbc1",
-                            "error": "#ff190c",
-                            "grey0": "#393e42",
-                            "grey1": "#43484d",
-                            "grey2": "#5e6977",
-                            "grey3": "#86939e",
-                            "grey4": "#bdc6cf",
-                            "grey5": "#e1e8ee",
-                            "greyOutline": "#bbb",
-                            "platform": Object {
-                              "android": Object {
-                                "error": "#f44336",
-                                "primary": "#2196f3",
-                                "secondary": "#9C27B0",
-                                "success": "#4caf50",
-                                "warning": "#ffeb3b",
-                              },
-                              "ios": Object {
-                                "error": "#ff3b30",
-                                "primary": "#007aff",
-                                "secondary": "#5856d6",
-                                "success": "#4cd964",
-                                "warning": "#ffcc00",
-                              },
-                            },
-                            "primary": "#2089dc",
-                            "searchBg": "#303337",
-                            "secondary": "#8F0CE8",
-                            "success": "#52c41a",
-                            "warning": "#faad14",
+                        Array [
+                          Object {
+                            "color": "#000000",
                           },
-                        }
+                          Object {
+                            "fontFamily": "System",
+                            "fontSize": 14,
+                            "fontWeight": "600",
+                          },
+                          Object {
+                            "fontFamily": "System",
+                            "fontWeight": "400",
+                          },
+                          Object {
+                            "color": "#727e84",
+                          },
+                        ]
                       }
                     >
                       1841-04-04
