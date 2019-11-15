@@ -43,6 +43,9 @@ class App extends React.Component {
     this.setState({ fontLoaded: true });
   }
   render() {
+    if (!this.state.fontLoaded) {
+      return null;
+    }
     const headerHeight = this.state.scrollY.interpolate({
       inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
       outputRange: [HEADER_EXPANDED_HEIGHT, HEADER_COLLAPSED_HEIGHT],
