@@ -10,11 +10,11 @@ import {
   Platform
 } from 'react-native';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
-import * as PXBThemes from '@pxblue/themes/react-native';
+import { ReactNativeThemes } from '@pxblue/themes';
 import { ThemeProvider, Body, Subtitle } from '@pxblue/react-native-components';
 import * as Font from 'expo-font';
 import * as Colors from '@pxblue/colors'
-import { ListItem, Text, Icon } from 'react-native-elements';
+import { ListItem, Icon } from 'react-native-elements';
 import data from './data';
 
 const AnimatedSafeAreaView = Animated.createAnimatedComponent(SafeAreaView);
@@ -33,7 +33,7 @@ class App extends React.Component {
   }
   async componentDidMount() {
     await Font.loadAsync({
-      'OpenSans-Extrabold': require('./assets/fonts/OpenSans-ExtraBold.ttf'),
+      'OpenSans-ExtraBold': require('./assets/fonts/OpenSans-ExtraBold.ttf'),
       'OpenSans-Bold': require('./assets/fonts/OpenSans-Bold.ttf'),
       'OpenSans-SemiBold': require('./assets/fonts/OpenSans-SemiBold.ttf'),
       'OpenSans-Regular': require('./assets/fonts/OpenSans-Regular.ttf'),
@@ -108,7 +108,7 @@ class App extends React.Component {
           ])}
           scrollEventThrottle={16}
         >
-          <ThemeProvider theme={PXBThemes.blue}>
+          <ThemeProvider theme={ReactNativeThemes.blue}>
             <FlatList
               data={data}
               keyExtractor={(item, index) => `${index}`}
@@ -120,7 +120,7 @@ class App extends React.Component {
                     <Subtitle style={{ color: Colors.gray[500] }} font={'regular'}>{item.party}</Subtitle>
                     <Subtitle style={{ color: Colors.gray[500] }} font={'regular'}>{item.took_office}</Subtitle>
                   </View>)}
-                  leftIcon={{ name: 'person', color: Colors.gray[500], iconStyle: { marginRight: 16 } }}
+                  leftIcon={{ name: 'person', color: Colors.gray[500], iconStyle: { marginLeft: 0 } }}
                 />
               )}
             />
