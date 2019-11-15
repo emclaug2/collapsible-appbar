@@ -27,7 +27,6 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      scrollY: new Animated.Value(0),
       fontLoaded: false
     }
   }
@@ -46,6 +45,21 @@ class App extends React.Component {
     if (!this.state.fontLoaded) {
       return null;
     }
+    return (
+      <ThemeProvider theme={ReactNativeThemes.blue}>
+        <Content />
+      </ThemeProvider>
+    );
+  }
+}
+export class Content extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      scrollY: new Animated.Value(0)
+    }
+  }
+  render() {
     const headerHeight = this.state.scrollY.interpolate({
       inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
       outputRange: [HEADER_EXPANDED_HEIGHT, HEADER_COLLAPSED_HEIGHT],
@@ -64,7 +78,8 @@ class App extends React.Component {
               height: headerHeight,
               opacity: this.state.scrollY.interpolate({
                 inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
-                outputRange: [0.3, 0]
+                outputRange: [0.3, 0],
+                extrapolate: 'clamp'
               })
             }]}
           />
@@ -108,23 +123,21 @@ class App extends React.Component {
           ])}
           scrollEventThrottle={16}
         >
-          <ThemeProvider theme={ReactNativeThemes.blue}>
-            <FlatList
-              data={data}
-              keyExtractor={(item, index) => `${index}`}
-              renderItem={({ item }) => (
-                <ListItem
-                  containerStyle={{ paddingHorizontal: 16 }}
-                  title={<Body style={{ marginLeft: 16 }} font={'semiBold'}>{item.president}</Body>}
-                  subtitle={(<View style={{ marginLeft: 16 }}>
-                    <Subtitle style={{ color: Colors.gray[500] }} font={'regular'}>{item.party}</Subtitle>
-                    <Subtitle style={{ color: Colors.gray[500] }} font={'regular'}>{item.took_office}</Subtitle>
-                  </View>)}
-                  leftIcon={{ name: 'person', color: Colors.gray[500], iconStyle: { marginLeft: 0 } }}
-                />
-              )}
-            />
-          </ThemeProvider>
+          <FlatList
+            data={data}
+            keyExtractor={(item, index) => `${index}`}
+            renderItem={({ item }) => (
+              <ListItem
+                containerStyle={{ paddingHorizontal: 16 }}
+                title={<Body style={{ marginLeft: 16 }} font={'semiBold'}>{item.president}</Body>}
+                subtitle={(<View style={{ marginLeft: 16 }}>
+                  <Subtitle style={{ color: Colors.gray[500] }} font={'regular'}>{item.party}</Subtitle>
+                  <Subtitle style={{ color: Colors.gray[500] }} font={'regular'}>{item.took_office}</Subtitle>
+                </View>)}
+                leftIcon={{ name: 'person', color: Colors.gray[500], iconStyle: { marginLeft: 0 } }}
+              />
+            )}
+          />
         </ScrollView>
         <SafeAreaView></SafeAreaView>
       </View >
@@ -184,7 +197,6 @@ class App extends React.Component {
     }];
   }
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
