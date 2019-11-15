@@ -10,6 +10,9 @@ import {
   Platform
 } from 'react-native';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
+import * as PXBThemes from '@pxblue/themes/react-native';
+import { ThemeProvider, Body, Subtitle } from '@pxblue/react-native-components';
+import * as Font from 'expo-font';
 import * as Colors from '@pxblue/colors'
 import { ListItem, Text, Icon } from 'react-native-elements';
 import data from './data';
@@ -20,14 +23,25 @@ const HEADER_COLLAPSED_HEIGHT = 56 + getStatusBarHeight();
 
 const lincoln = require('./assets/lincoln.jpg');
 
-export default class App extends React.Component {
+class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      scrollY: new Animated.Value(0)
+      scrollY: new Animated.Value(0),
+      fontLoaded: false
     }
   }
+  async componentDidMount() {
+    await Font.loadAsync({
+      'OpenSans-Extrabold': require('./assets/fonts/OpenSans-ExtraBold.ttf'),
+      'OpenSans-Bold': require('./assets/fonts/OpenSans-Bold.ttf'),
+      'OpenSans-SemiBold': require('./assets/fonts/OpenSans-SemiBold.ttf'),
+      'OpenSans-Regular': require('./assets/fonts/OpenSans-Regular.ttf'),
+      'OpenSans-Light': require('./assets/fonts/OpenSans-Light.ttf'),
+    });
 
+    this.setState({ fontLoaded: true });
+  }
   render() {
     const headerHeight = this.state.scrollY.interpolate({
       inputRange: [0, HEADER_EXPANDED_HEIGHT - HEADER_COLLAPSED_HEIGHT],
@@ -91,22 +105,23 @@ export default class App extends React.Component {
           ])}
           scrollEventThrottle={16}
         >
-          <FlatList
-            data={data}
-            keyExtractor={(item, index) => `${index}`}
-            renderItem={({ item }) => (
-              <ListItem
-                containerStyle={{paddingHorizontal: 16}}
-                title={item.president}
-                subtitle={(<View>
-                  <Text style={{ color: Colors.gray[500] }}>{item.party}</Text>
-                  <Text style={{ color: Colors.gray[500] }}>{item.took_office}</Text>
-                </View>)}
-                leftIcon={{ name: 'person', color: Colors.gray[500], iconStyle: { marginRight: 16 } }}
-              />
-            )}
-          />
-
+          <ThemeProvider theme={PXBThemes.blue}>
+            <FlatList
+              data={data}
+              keyExtractor={(item, index) => `${index}`}
+              renderItem={({ item }) => (
+                <ListItem
+                  containerStyle={{ paddingHorizontal: 16 }}
+                  title={<Body style={{ marginLeft: 16 }} font={'semiBold'}>{item.president}</Body>}
+                  subtitle={(<View style={{ marginLeft: 16 }}>
+                    <Subtitle style={{ color: Colors.gray[500] }} font={'regular'}>{item.party}</Subtitle>
+                    <Subtitle style={{ color: Colors.gray[500] }} font={'regular'}>{item.took_office}</Subtitle>
+                  </View>)}
+                  leftIcon={{ name: 'person', color: Colors.gray[500], iconStyle: { marginRight: 16 } }}
+                />
+              )}
+            />
+          </ThemeProvider>
         </ScrollView>
         <SafeAreaView></SafeAreaView>
       </View >
@@ -202,3 +217,4 @@ const styles = StyleSheet.create({
     resizeMode: 'cover'
   }
 });
+export default App;
